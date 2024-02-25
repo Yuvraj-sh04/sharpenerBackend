@@ -1,27 +1,24 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const port = 3000;
+const path = require('path');
 
-const admin = require('./routes/admin');
+app.use(express.static('static'))
 
+const login = require('./routes/login');
+const contact = require('./routes/contact');
 const shop = require('./routes/shop');
 
-const port = 3000
-const bodyParser = require('body-parser');
+app.use('/contact',contact);
 
+app.use('/login',login);
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use('/', shop);
 
-app.use('/admin',admin);
+app.use((req,res)=>{
+    res.sendFile(path.join(__dirname,'views', '404.html'))
+})
 
-app.use('/shop',shop);
-
-
-app.use((req,res,next)=>{
-    res.status(404).send('<h1>Page Not Found</h1>')
-});
-
-
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(port, ()=>{
+    console.log(`Listening on Port ${port}`);
 })

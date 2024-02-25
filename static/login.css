@@ -1,0 +1,74 @@
+.form{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+fieldset{
+    background-color: beige;
+    height: 80px;
+}
+
+button{
+    font-size: 15px;
+    background-color: aliceblue;
+    color: darkorchid;
+    border: 1px solid rgb(135, 226, 247);
+    border-radius: 30px;
+    cursor: pointer;        
+}
+
+input{
+    font-size: 25px;
+    background-color: rgb(178, 214, 246);
+    color: rgb(77, 220, 192);
+    border: 1px solid rgb(245, 158, 132);
+    border-radius: 30px;
+}
+
+.form-label{
+    font-size: 25px;
+    color: rgb(77, 220, 192);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: burlywood;
+}
+
+.nav1{
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    height: 100%;      
+}
+
+.nav-lists {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.lists{
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+.nav-lists a{
+    text-decoration: none;
+    color: aliceblue;
+}
