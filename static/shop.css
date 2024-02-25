@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: burlywood;
+}
+
+.nav1{
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    height: 100%;      
+}
+
+.nav-lists {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.lists{
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+.nav-lists a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1{
+    color: #2ca9ec;
+    text-align: center;
+    margin-top: 35px;
+    height: 90px;
+    padding:40px;
+    font-size: 50px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+
+</head>
+<body>
+    <div>
+        <header class="header">
+            <nav class="nav1">
+                <ul class="nav-lists">
+                    <li class="lists"><a href="/">Home</a></li>
+                    <li class="lists"><a href="/contact">Contact</a></li>
+                    <li class="lists"><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+     </div>
+    <div class="form">
+        <form action="/contact/auth" method="post" id="myform">
+            <fieldset>
+                <legend>Contacts</legend>
+                <div class="area">
+                    <label for="name" class="form-label">Name : </label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="area">
+                    <label for="email" class="form-label">Email : </label>
+                    <input type="test" id="email" name="email">
+                </div>
+                <button type="submit" >Login</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

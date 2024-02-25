@@ -1,0 +1,26 @@
+h1{
+    color: #2ca9ec;
+    text-align: center;
+    margin-top: 35px;
+    height: 90px;
+    padding:40px;
+    font-size: 50px;
+}
+.html404{
+    padding: 40px;
+    text-align: center;
+
+}
+.home404-Button{
+    font-size: 30px;
+    padding: 5px;
+    background-color: aliceblue;
+    color: darkorchid;
+    border: 2px solid rgb(135, 226, 247);
+    border-radius: 30px;
+    cursor: pointer;    
+}
+.home404-Button:hover{
+    background-color: rgb(6, 135, 248);
+    color: rgb(255, 255, 255);
+}
