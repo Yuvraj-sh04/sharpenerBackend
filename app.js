@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 const path = require('path');
 
+const errorController = require('./controllers/error');
+
 app.use(express.static('static'))
 
 const login = require('./routes/login');
@@ -15,9 +17,7 @@ app.use('/login',login);
 
 app.use('/', shop);
 
-app.use((req,res)=>{
-    res.sendFile(path.join(__dirname,'views', '404.html'))
-})
+app.use(errorController.error);
 
 app.listen(port, ()=>{
     console.log(`Listening on Port ${port}`);
