@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 const path = require('path');
 
+const db = require('./util/database');
+
 const errorController = require('./controllers/error');
 
 app.use(express.static('static'))
