@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NodeJs</title>
+  </head>
+  <body>
+    <div class="createPosts">
+      <form id="myForm">
+        <fieldset>
+          <legend class="container">Create Posts</legend>
+          <div class="postsData">
+            <div class="label">
+              <label for="postLink" class="formLabel">Posts Link : </label>
+            </div>
+            <input type="text" id="postLink" class="input" />
+            <div class="label">
+              <label for="postDescription" class="formLabel"
+                >Posts Description :
+              </label>
+            </div>
+            <input type="text" id="postDescription" class="input" />
+          </div>
+
+          <input class="btn" type="submit" value="Create Post" />
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="posts" id="postArea"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
